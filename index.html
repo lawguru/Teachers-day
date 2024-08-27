@@ -9,11 +9,12 @@
 <body>
     <div class="container">
         <h1>Happy Teachers' Day!</h1>
-        <button id="revealButton">Click to Reveal Your Surprise</button>
+        <p>Please enter your name to receive your surprise:</p>
+        <input type="text" id="teacherName" placeholder="Enter your name" />
+        <button id="submitButton">Submit</button>
+        <div id="error" class="hidden error-message">Please enter a valid name.</div>
         <div id="revealContent" class="hidden">
-            <p>Dear Teachers,</p>
-            <p>Thank you for your guidance, wisdom, and support throughout my journey. This website is a small token of my appreciation for everything you do.</p>
-            <p>Wishing you a wonderful Teachers' Day!</p>
+            <p id="personalMessage"></p>
         </div>
     </div>
     <script src="scripts.js"></script>
