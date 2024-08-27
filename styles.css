@@ -20,7 +20,18 @@ h1 {
     color: #333;
 }
 
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 button {
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -37,6 +48,11 @@ button:hover {
 
 .hidden {
     display: none;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
 }
 
 #revealContent {
