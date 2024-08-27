@@ -12,7 +12,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
 
         // Personalized messages for specific names
         const messages = {
-            "John": "Dear Mr. John, thank you for your unwavering support and guidance. You have truly made a difference in my life.",
+            "Deepshika": "Dear Mr. John, thank you for your unwavering support and guidance. You have truly made a difference in my life.",
             "Jane": "Dear Ms. Jane, your passion for teaching and dedication to your students are truly inspiring. Happy Teachers' Day!",
             "Smith": "Dear Professor Smith, your wisdom and encouragement have been a light in my journey. Thank you!"
             // Add more names and messages as needed
