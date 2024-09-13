@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LEADERBOARD | AUSLYMPIC 2024</title>
+    <link rel="stylesheet" type="text/css" href="style.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-icons.min.css">
+    <link rel="icon" href="/static/logo-color-144x144.png" sizes="144x144" type="image/png">
+    <link rel="icon" href="/static/logo-color-96x96.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="/static/logo-color-48x48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest.html">
+    <style>
+        .masked-background {
+            -webkit-mask-image: url('/static/mask.svg');
+            /* For WebKit-based browsers */
+            mask-image: url('/static/mask.svg');
+            /* Standard */
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: right center;
+            mask-position: right center;
+        }
+
+        .masked-btn {
+            -webkit-mask-image: url('/static/mask-button.svg');
+            /* For WebKit-based browsers */
+            mask-image: url('/static/mask-button.svg');
+            /* Standard */
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            -webkit-mask-position: center;
+            mask-position: center;
+        }
+    </style>
+    
+    
+</head>
+
+<body id="body" data-bs-theme="dark" class="bg-body overflow-x-hidden text-uppercase">
+    
+    
+<div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header px-5 pt-4 mt-2">
+        <h5 class="offcanvas-title fw-bold fs-4 text-uppercase mt-2" id="offcanvasRightLabel">SPORTS</h5>
+        <button id="close-sidebar" type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+<h3 class="display-5 fw-bold mt-5 py-4">Register</h3>
+        <small>Open till Sept. 18, 2024, 5 p.m.</small>
+        <div id="register-form-member" class="d-none">
+            <div class="form-floating mb-3">
+                <input type="text" name="members" class="form-control rounded-0" placeholder="Member number"
+                    value="member_name">
+                <label>Member number</label>
+            </div>
+        </div>
+        <form action="#register-form" id="register-form" method="POST" class="py-4">
+            <input type="hidden" name="csrfmiddlewaretoken" value="zY4GnyV17bjj03hwDFs8PotTjTxjJzLMcYnYvrZHvjsH6f8MxapHLsCNGVtth0H0">
+            <div class="form-floating mb-3 d-none">
+                <select name="sport" class="form-control rounded-0" placeholder="Select Sport" required id="id_sport">
+  <option value="">Select</option>
+
+  <option value="1" selected>Men&#x27;s Cricket</option>
+
+  <option value="2">Women&#x27;s Cricket</option>
+
+  <option value="3">Men&#x27;s Football</option>
+
+  <option value="4">Women&#x27;s Football</option>
+
+  <option value="5">Men&#x27;s Volleyball</option>
+
+  <option value="6">Women&#x27;s Volleyball</option>
+
+  <option value="7">Men&#x27;s Basketball</option>
+
+  <option value="8">Women&#x27;s Basketball</option>
+
+  <option value="9">Men&#x27;s Kho Kho</option>
+
+  <option value="10">Women&#x27;s Kho Kho</option>
+
+  <option value="11">Men&#x27;s Kabaddi</option>
+
+  <option value="12">Women&#x27;s Kabaddi</option>
+
+  <option value="13">Men&#x27;s Tug of War</option>
+
+  <option value="14">Women&#x27;s Tug of War</option>
+
+  <option value="15">Men&#x27;s Arm Wrestling</option>
+
+  <option value="16">Women&#x27;s Arm Wrestling</option>
+
+  <option value="17">Men&#x27;s Powerlifting</option>
+
+  <option value="18">Women&#x27;s Powerlifting</option>
+
+  <option value="19">Men&#x27;s Long Jump</option>
+
+  <option value="20">Women&#x27;s Long Jump</option>
+
+  <option value="21">Men&#x27;s Solo Carrom</option>
+
+  <option value="22">Women&#x27;s Solo Carrom</option>
+
+  <option value="23">Men&#x27;s Duo Carrom</option>
+
+  <option value="24">Women&#x27;s Duo Carrom</option>
+
+  <option value="25">Mixed Duo Carrom</option>
+
+  <option value="26">Chess</option>
+
+  <option value="27">Men&#x27;s Solo Table Tennis</option>
+
+  <option value="28">Women&#x27;s Solo Table Tennis</option>
+
+  <option value="29">Men&#x27;s Duo Table Tennis</option>
+
+  <option value="30">Women&#x27;s Duo Table Tennis</option>
+
+  <option value="31">Mixed Duo Table Tennis</option>
+
+  <option value="32">Men&#x27;s Solo Badminton</option>
+
+  <option value="33">Women&#x27;s Solo Badminton</option>
+
+  <option value="34">Men&#x27;s Duo Badminton</option>
+
+  <option value="35">Women&#x27;s Duo Badminton</option>
+
+  <option value="36">Mixed Duo Badminton</option>
+
+  <option value="37">FIFA 2023</option>
+
+  <option value="38">Valorant</option>
+
+  <option value="39">BGMI</option>
+
+  <option value="40">Moba Lengends</option>
+
+  <option value="41">Men&#x27;s Discus Throw</option>
+
+  <option value="42">Women&#x27;s Discus Throw</option>
+
+  <option value="43">Men&#x27;s Javelin Throw</option>
+
+  <option value="44">Women&#x27;s Javelin Throw</option>
+
+  <option value="45">Men&#x27;s Shot Put Throw</option>
+
+  <option value="46">Women&#x27;s Shot Put Throw</option>
+
+  <option value="47">Men&#x27;s Relay Race</option>
+
+  <option value="48">Women&#x27;s Relay Race</option>
+
+  <option value="49">Men&#x27;s 100 meter Race</option>
+
+  <option value="50">Women&#x27;s 100 meter Race</option>
+
+  <option value="51">Men&#x27;s 200 meter Race</option>
+
+  <option value="52">Women&#x27;s 200 meter Race</option>
+
+  <option value="53">Men&#x27;s High Jump</option>
+
+  <option value="54">Women&#x27;s High Jump</option>
+
+</select>
+                <label for="id_sport">Sport</label>
+                
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control rounded-0" placeholder="Name" maxlength="100" required aria-describedby="id_name_helptext" id="id_name">
+                <label for="id_name">Name</label>
+                
+                <div class="form-text">
+                    Participant Name or Team Name
+                </div>
+                
+            </div>
+            
+            <div class="form-floating mb-3">
+                <input type="number" name="phone" min="6000000000" max="9999999999" class="form-control rounded-0" placeholder="Phone" maxlength="100" required aria-describedby="id_phone_helptext" id="id_phone">
+                <label for="id_phone">Phone</label>
+                
+                <div class="form-text">
+                    Participant/Captain&#x27;s Phone number
+                </div>
+                
+            </div>
+            
+            <div class="form-floating mb-3">
+                <select name="department" class="form-control rounded-0" placeholder="Select Department" required id="id_department">
+  <option value="" selected>Select</option>
+
+  <option value="40">Department of Agricultural Engineering</option>
+
+  <option value="43">Department of Applied Science and Humanities</option>
+
+  <option value="11">Department of Arabic</option>
+
+  <option value="53">Department of BBA</option>
+
+  <option value="54">Department of B.Voc.</option>
+
+  <option value="2">Department of Bengali</option>
+
+  <option value="36">Department of Biotechnology</option>
+
+  <option value="27">Department of Chemistry</option>
+
+  <option value="14">Department of Commerce</option>
+
+  <option value="4">Department of Indian Comparative Literature</option>
+
+  <option value="55">PGDCA</option>
+
+  <option value="41">Department of Computer Science &amp; Engineering</option>
+
+  <option value="31">Department of Computer Science</option>
+
+  <option value="45">Department of Earth Science</option>
+
+  <option value="38">Department of Ecology and Environmental Science</option>
+
+  <option value="13">Department of Economics</option>
+
+  <option value="24">Department of Education</option>
+
+  <option value="42">Department of Electronics &amp; Communication Engineering</option>
+
+  <option value="10">Department of English</option>
+
+  <option value="12">Department of French</option>
+
+  <option value="5">Department of Hindi</option>
+
+  <option value="16">Department of History</option>
+
+  <option value="52">Department of Hospitality &amp; Tourism</option>
+
+  <option value="48">Department of Law</option>
+
+  <option value="47">Department of Library and Information Science</option>
+
+  <option value="33">Department of Life Science &amp; Bio-informatics</option>
+
+  <option value="1">Department of Linguistics</option>
+
+  <option value="6">Department of Manipuri</option>
+
+  <option value="20">Department of Mass Communication</option>
+
+  <option value="37">Department of MBA</option>
+
+  <option value="29">Department of Mathematics</option>
+
+  <option value="35">Department of Microbiology</option>
+
+  <option value="22">Department of Performing Arts</option>
+
+  <option value="44">Department of Pharmaceutical Science</option>
+
+  <option value="23">Department of Philosophy</option>
+
+  <option value="26">Department of Physics</option>
+
+  <option value="15">Department of Political Science</option>
+
+  <option value="7">Department of Sanskrit</option>
+
+  <option value="18">Department of Social Work</option>
+
+  <option value="17">Department of Sociology</option>
+
+  <option value="30">Department of Statistics</option>
+
+  <option value="8">Department of Urdu</option>
+
+  <option value="21">Department of Visual Arts</option>
+
+</select>
+                <label for="id_department">Department</label>
+                
+            </div>
+            
+            <div class="">
+                <div id="register-form-members">
+                    <label for="id_members">Members</label>
+                    
+                    <div class="form-text mb-2">
+                        Full name of the Team Members.
+                    </div>
+                    <div class="form-text mb-2">
+                        Add 11 to 15 members.
+                    </div>
+                    
+                </div>
+                <input id="add-member-button" type="button"
+                    class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Add Member"
+                    onclick="addMember();">
+            </div>
+            
+            <input type="submit" class="btn btn-primary btn-lg masked-btn mb-3 w-100 rounded-0" value="Submit">
+            
+        </form>
+        
+
+        
+        <h3 class="display-5 fw-bold mt-5 py-4">
+            
+            Registered entries
+            
+        </h3>
+        
+        <div class="accordion" id="entries-accordion">
+            
+            
+            <div id="team-141" class="accordion-item rounded-0">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed p-3 p-sm-4" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapse-141"
+                        aria-expanded="false" aria-controls="collapse-141">
+                        <div class="d-flex">
+                            <div>
+                                <div class="lead fw-bold me-2" style="width: 2ch;">1</div>
+                            </div>
+                            <div>
+                                <div class="lead fw-bold">Mrityunjay Chakraborty</div>
+                                <div class="text-secondary-emphasis">Department of Agricultural Engineering</div>
+                                <span
+                                    class="d-flex flex-wrap gap-2 justify-content-start align-items-center">
+                                    
+                                </span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div id="collapse-141" class="accordion-collapse collapse"
+                    data-bs-parent="#entries-accordion">
+                    <div class="accordion-body">
+                        <ol class="mb-0">
+
+                          <script>
+    var members_str = "None"
+    var members_lower_limit = parseInt("11");
+    var members_upper_limit = parseInt("15");
+
+    if (members_str == "None")
+        var members = [];
+    else
+        var members = JSON.parse(members_str.replace(/&quot;/g,'"'));
+
+    var member_count = 0;
+
+    for (i in members) {
+        addMember(members[i]);
+    }
+    while (member_count < members_lower_limit) {
+        addMember();
+    }
+
+    function addMember(name = "") {
+        member_count++;
+        input = document.getElementById("register-form-member").innerHTML;
+        input = input.replace(/member_name/g, name);
+        input = input.replace(/number/g, `${member_count}`)
+        input = input.replace(/Member 1</g, "Member 1 (Captain)<")
+        el = document.createElement("div");
+        el.setAttribute("id", `register-form-member-${member_count}`);
+        el.innerHTML = input;
+        document.getElementById("register-form-members").appendChild(el);
+        setAddButtonVisibility();
+    }
+
+    function setAddButtonVisibility() {
+        add_member_button = document.getElementById("add-member-button");
+        if (member_count >= members_upper_limit)
+            add_member_button.classList.add("d-none");
+        else
+            add_member_button.classList.remove("d-none");
+
+    }
+</script>
+
+ <div class="d-flex justify-content-center py-4 border-top">
+        <small>© 2024 AUSLYMPIC, Assam University, Silchar. All rights reserved.</small>
+    </div>
+</footer>
+
+<script>
+    function hideBars(id) {
+        document.getElementById('close-sidebar').click();
+        setTimeout(() => {
+            document.getElementById('nav-menu').click();
+            setTimeout(() => {
+                document.getElementById(id).click();
+            }, 300);
+        }, 300);
+    }
+
+    let lastScrollY = window.pageYOffset;
+    const navbar = document.querySelector('#navbar');
+
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.pageYOffset;
+        if (currentScrollY > lastScrollY) {
+            navbar.classList.add('translate-up');
+        } else {
+            navbar.classList.remove('translate-up');
+        }
+
+        lastScrollY = currentScrollY;
+    });
+</script>
+
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+</body>
+
+</html>
