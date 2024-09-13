@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .rank {
+            font-weight: bold;
+        }
+
+        .name {
+            font-style: italic;
+        }
+
+        .score {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leaderboard</h1>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // Example leaderboard data
+        const leaderboardData = [
+            { rank: 1, name: 'Alice Johnson', score: 1500 },
+            { rank: 2, name: 'Bob Smith', score: 1200 },
+            { rank: 3, name: 'Charlie Brown', score: 1000 },
+            { rank: 4, name: 'Diana Prince', score: 850 },
+            { rank: 5, name: 'Evan Stone', score: 750 }
+        ];
+
+        function populateLeaderboard() {
+            const tableBody = document.querySelector('#leaderboard tbody');
+            
+            leaderboardData.forEach(entry => {
+                const row = document.createElement('tr');
+                
+                const rankCell = document.createElement('td');
+                rankCell.textContent = entry.rank;
+                rankCell.classList.add('rank');
+                row.appendChild(rankCell);
+                
+                const nameCell = document.createElement('td');
+                nameCell.textContent = entry.name;
+                nameCell.classList.add('name');
+                row.appendChild(nameCell);
+                
+                const scoreCell = document.createElement('td');
+                scoreCell.textContent = entry.score;
+                scoreCell.classList.add('score');
+                row.appendChild(scoreCell);
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', populateLeaderboard);
+    </script>
+</body>
+</html>
