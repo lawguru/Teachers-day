@@ -7,16 +7,1050 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Happy Teachers' Day!</h1>
-        <p>Please enter your name to receive your surprise:</p>
-        <input type="text" id="teacherName" placeholder="Enter your name" />
-        <button id="submitButton">Submit</button>
-        <div id="error" class="hidden error-message">Please enter a valid name.</div>
-        <div id="revealContent" class="hidden">
-            <p id="personalMessage"></p>
+    <div class="col-10 col-sm-6 col-md-7 col-lg-7 col-xl-6 text-center text-sm-start">
+                    <h1 class="display-2 text-uppercase">LEADERBOARD</h1>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+</div>
+
+<div class="d-flex align-items-center justify-content-evenly flex-wrap bg-body p-0 p-md-5">
+    <div class="d-flex w-100 py-3 pe-0 ps-2 ps-md-3">
+        <div class="col-8 d-flex align-items-center justify-content-start">
+            <div style="width: 3ch;">
+            </div>
+            <div class="lead">
+                Department
+            </div>
+        </div>
+        <div class="col-1 text-center">
+            <i class="bi bi-1-circle text-warning-emphasis fs-5"></i>
+        </div>
+        <div class="col-1 text-center">
+            <i class="bi bi-2-circle text-secondary-emphasis fs-5"></i>
+        </div>
+        <div class="col-1 text-center">
+            <i class="bi bi-3-circle text-danger-emphasis fs-5"></i>
+        </div>
+        <div class="col-1 text-center">
+            <i class="bi bi-123 text-info-emphasis fs-5"></i>
+        </div>
+    </div>
+    <div class="accordion w-100" id="accordion-dept">
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-agricultural_engineering" aria-expanded="false"
+                    aria-controls="collapse-agricultural_engineering">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                1
+                            </div>
+                            <div>
+                                <div>
+                                     Agricultural Engineering
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-agricultural_engineering" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-applied_science" aria-expanded="false"
+                    aria-controls="collapse-applied_science">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                2
+                            </div>
+                            <div>
+                                <div>
+                                     Applied Science and Humanities
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-applied_science" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-arabic" aria-expanded="false"
+                    aria-controls="collapse-arabic">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                3
+                            </div>
+                            <div>
+                                <div>
+                                     Arabic
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-arabic" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-bachelor_business_administration" aria-expanded="false"
+                    aria-controls="collapse-bachelor_business_administration">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                4
+                            </div>
+                            <div>
+                                <div>
+                                     BBA
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-bachelor_business_administration" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-bachelor_vocational_education" aria-expanded="false"
+                    aria-controls="collapse-bachelor_vocational_education">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                5
+                            </div>
+                            <div>
+                                <div>
+                                     B.Voc.
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-bachelor_vocational_education" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-bengali" aria-expanded="false"
+                    aria-controls="collapse-bengali">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                6
+                            </div>
+                            <div>
+                                <div>
+                                     Bengali
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-bengali" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-biotechnology" aria-expanded="false"
+                    aria-controls="collapse-biotechnology">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                7
+                            </div>
+                            <div>
+                                <div>
+                                     Biotechnology
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-biotechnology" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-chemistry" aria-expanded="false"
+                    aria-controls="collapse-chemistry">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                8
+                            </div>
+                            <div>
+                                <div>
+                                     Chemistry
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-chemistry" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-commerce" aria-expanded="false"
+                    aria-controls="collapse-commerce">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                9
+                            </div>
+                            <div>
+                                <div>
+                                     Commerce
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-commerce" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-comparative_literature" aria-expanded="false"
+                    aria-controls="collapse-comparative_literature">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                10
+                            </div>
+                            <div>
+                                <div>
+                                     Indian Comparative Literature
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-comparative_literature" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-computer_centre" aria-expanded="false"
+                    aria-controls="collapse-computer_centre">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                11
+                            </div>
+                            <div>
+                                <div>
+                                    PGDCA
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-computer_centre" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-computer_engineering" aria-expanded="false"
+                    aria-controls="collapse-computer_engineering">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                12
+                            </div>
+                            <div>
+                                <div>
+                                     Computer Science &amp; Engineering
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-computer_engineering" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-computer_science" aria-expanded="false"
+                    aria-controls="collapse-computer_science">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                13
+                            </div>
+                            <div>
+                                <div>
+                                     Computer Science
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-computer_science" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-earth_science" aria-expanded="false"
+                    aria-controls="collapse-earth_science">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                14
+                            </div>
+                            <div>
+                                <div>
+                                     Earth Science
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-earth_science" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-ecology" aria-expanded="false"
+                    aria-controls="collapse-ecology">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                15
+                            </div>
+                            <div>
+                                <div>
+                                     Ecology and Environmental Science
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-ecology" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-economics" aria-expanded="false"
+                    aria-controls="collapse-economics">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                16
+                            </div>
+                            <div>
+                                <div>
+                                     Economics
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-economics" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-education" aria-expanded="false"
+                    aria-controls="collapse-education">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                17
+                            </div>
+                            <div>
+                                <div>
+                                     Education
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-education" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-electronics_communications" aria-expanded="false"
+                    aria-controls="collapse-electronics_communications">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                18
+                            </div>
+                            <div>
+                                <div>
+                                     Electronics &amp; Communication Engineering
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-electronics_communications" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-english" aria-expanded="false"
+                    aria-controls="collapse-english">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                19
+                            </div>
+                            <div>
+                                <div>
+                                     English
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-english" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-french" aria-expanded="false"
+                    aria-controls="collapse-french">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                20
+                            </div>
+                            <div>
+                                <div>
+                                     French
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-french" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-hindi" aria-expanded="false"
+                    aria-controls="collapse-hindi">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                21
+                            </div>
+                            <div>
+                                <div>
+                                     Hindi
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-hindi" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item rounded-0">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed d-block py-3 pe-0 ps-2 ps-md-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-history" aria-expanded="false"
+                    aria-controls="collapse-history">
+                    <div class="d-flex align-items-center w-100">
+                        <div class="col-8 d-flex align-items-center justify-content-start">
+                            <div style="width: 3ch;">
+                                22
+                            </div>
+                            <div>
+                                <div>
+                                     History
+                                </div>
+                                <div>
+                                    <small class="text-body-secondary text-capitalize mt-2">Expand</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 text-warning-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-secondary-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-danger-emphasis text-center">
+                            0
+                        </div>
+                        <div class="col-1 text-info-emphasis text-center">
+                            0
+                        </div>
+                    </div>
+                </button>
+            </h2>
+            <div id="collapse-history" class="accordion-collapse collapse"
+                data-bs-parent="#accordion-dept">
+                <div class="accordion-body p-3">
+                    
+                    <div class="ms-3 ms-md-4">
+                        No Winners yet.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
 </body>
 </html>
